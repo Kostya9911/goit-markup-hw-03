@@ -1,11 +1,13 @@
-html {
-  box-sizing: border-box;
+/* Скидання стилів */
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 /* Переменные */
 :root {
   /* Колір тексту */
@@ -97,18 +99,21 @@ body {
 
 .head-section {
   background-color: var(--main-bcg-cl);
+  padding: 200px 0;
 }
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
 
   color: var(--ligt-cl-txt);
 
-  margin: 0;
+  margin: 0 auto;
 }
 /* Кнопка головної секції */
 .button-main {
@@ -122,6 +127,8 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  margin: 30px auto 0 auto;
+  display: block;
 }
 .button-main:hover,
 .button-main:focus {
@@ -149,6 +156,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 .advantage {
   font-size: 14px;
@@ -161,6 +169,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 /* Секція - Перелік членів команди */
@@ -281,8 +290,42 @@ body {
   margin-right: 50px;
 }
 
-.logo {
+.logo.logo-header {
   margin-top: 24px;
   margin-right: 93px;
   margin-bottom: 25px;
+}
+.logo.logo-footer {
+  display: inline-block;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.item-link-addr:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address {
+  padding-bottom: 60px;
+}
+
+.list.list-advantage {
+  display: flex;
+}
+.item-advantage:not(:last-child) {
+  margin-right: 30px;
+  width: 270px;
+}
+.item-advantage {
+  width: 270px;
+}
+.cont-advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list-services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-services {
+  padding-bottom: 94px;
 }
