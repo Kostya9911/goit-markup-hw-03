@@ -234,6 +234,8 @@ img {
 
 .button-portfolio {
   font-family: inherit;
+  font-size: 16px;
+
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -369,4 +371,19 @@ img {
 }
 .item-btn:not(:last-child) {
   margin-right: 8px;
+}
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-project {
+  width: 370px;
+  margin-bottom: 30px;
+}
+.item-project:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.item-project:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
