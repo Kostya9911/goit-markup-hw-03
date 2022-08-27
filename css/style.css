@@ -35,6 +35,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Стилізація головної сторінки, хедера та футера */
 
 /* Хедер */
@@ -129,6 +135,8 @@ body {
   border-radius: 4px;
   margin: 30px auto 0 auto;
   display: block;
+  width: 216px;
+  height: 50px;
 }
 .button-main:hover,
 .button-main:focus {
@@ -178,6 +186,8 @@ body {
 }
 .list-item-team {
   background-color: var(--ligt-cl-txt);
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .title-team {
@@ -233,6 +243,7 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -260,6 +271,8 @@ body {
 
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container.header {
   display: flex;
@@ -274,26 +287,24 @@ body {
 .list.list-contact {
   display: flex;
 
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .list.list-nav {
   display: flex;
 
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-top: 32;
-  margin-bottom: 32;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .list .item-nav:not(:last-child) {
   margin-right: 50px;
 }
 
-.logo.logo-header {
-  margin-top: 24px;
+.logo-header {
+  padding-top: 24px;
   margin-right: 93px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 .logo.logo-footer {
   display: inline-block;
@@ -328,4 +339,34 @@ body {
 
 .section-services {
   padding-bottom: 94px;
+}
+
+.list-team {
+  display: flex;
+  justify-content: space-between;
+}
+.container-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.img-team {
+  margin-bottom: 30px;
+}
+.title-team {
+  margin-bottom: 10px;
+}
+
+.list-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.container-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.item-btn:not(:last-child) {
+  margin-right: 8px;
 }
