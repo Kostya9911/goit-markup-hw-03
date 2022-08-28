@@ -43,6 +43,20 @@ img {
   height: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Стилізація головної сторінки, хедера та футера */
 
 /* Хедер */
@@ -74,8 +88,6 @@ img {
 
 .list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 /* Стилізує контакти хедер */
@@ -104,6 +116,34 @@ img {
   color: var(--link-cl-txt);
 }
 
+.container.header {
+  display: flex;
+  border-bottom: 1px solid var(--col-bd-11);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 344px;
+}
+
+.list.list-contact {
+  display: flex;
+}
+.list.list-nav {
+  display: flex;
+}
+
+.list .item-nav:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo-header {
+  padding-top: 24px;
+  margin-right: 93px;
+  padding-bottom: 25px;
+}
+
 /* Стилізація головної частини сторінки. Мейн */
 
 /* Головна секція */
@@ -126,6 +166,11 @@ img {
 
   margin: 0 auto 30px;
 }
+
+.main-container {
+  justify-content: center;
+}
+
 /* Кнопка головної секції */
 .button-main {
   font-family: inherit;
@@ -187,6 +232,17 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+.list-services {
+  display: flex;
+  gap: 30px;
+}
+.list-services > li {
+  width: 370px;
+}
+
+.section.section-services {
+  padding-top: 0;
+}
 
 /* Секція - Перелік членів команди */
 .section-our-team {
@@ -194,8 +250,8 @@ img {
 }
 .list-item-team {
   background-color: var(--ligt-cl-txt);
-  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
 }
 
 .title-team {
@@ -210,10 +266,21 @@ img {
   color: var(--second-cl-txt);
 }
 
+.list-team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-team {
+  margin-bottom: 10px;
+}
+
 /* Підвал */
 
 .footer {
   background-color: var(--main-bcg-cl);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .link-map {
   font-style: normal;
@@ -235,6 +302,15 @@ img {
 .link-map:hover,
 .link-map:focus {
   color: var(--link-cl-txt);
+}
+
+.logo.logo-footer {
+  display: inline-block;
+
+  margin-bottom: 20px;
+}
+.item-link-addr:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Стилізація сторінки - Портфоліо */
@@ -262,6 +338,16 @@ img {
   color: var(--ligt-cl-txt);
 }
 
+.list-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.item-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* Перелік робіт в портфоліо */
 
 .title-project {
@@ -278,102 +364,13 @@ img {
 .link-project {
   text-decoration: none;
 }
-.container {
-  width: 1200px;
 
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container.header {
-  display: flex;
-  border-bottom: 1px solid var(--col-bd-11);
+.description-project {
+  padding: 20px 24px;
+  border: 1px solid var(--col-bd-12);
+  border-top: none;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  margin-right: 344px;
-}
-.list.list-contact {
-  display: flex;
-
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-}
-.list.list-nav {
-  display: flex;
-
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-}
-
-.list .item-nav:not(:last-child) {
-  margin-right: 50px;
-}
-
-.logo-header {
-  padding-top: 24px;
-  margin-right: 93px;
-  padding-bottom: 25px;
-}
-.logo.logo-footer {
-  display: inline-block;
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
-.item-link-addr:not(:last-child) {
-  margin-bottom: 9px;
-}
-.address {
-  padding-bottom: 60px;
-}
-
-.list.list-advantage {
-  display: flex;
-}
-.item-advantage:not(:last-child) {
-  margin-right: 30px;
-  width: 270px;
-}
-.item-advantage {
-  width: 270px;
-}
-
-.list-services {
-  display: flex;
-  /* justify-content: space-between; */
-  gap: 30px;
-}
-
-.section.section-services {
-  padding-top: 0;
-}
-
-.list-team {
-  display: flex;
-  justify-content: space-between;
-}
-
-.img-team {
-  margin-bottom: 30px;
-}
-.title-team {
-  margin-bottom: 10px;
-}
-
-.list-btns {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.container-portfolio {
-}
-.item-btn:not(:last-child) {
-  margin-right: 8px;
-}
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -390,18 +387,15 @@ img {
   margin-right: 30px;
 }
 
-.img-project {
-  /* margin-bottom: 20px; */
+.list.list-advantage {
+  display: flex;
 }
-.description-project {
-  padding: 20px 24px;
-  border: 1px solid var(--col-bd-12);
-  border-top: none;
+.item-advantage:not(:last-child) {
+  margin-right: 30px;
+  width: 270px;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.item-advantage {
+  width: 270px;
 }
-.main-container {
-  justify-content: center;
-}
+
+/* ----------------------------------------- */
