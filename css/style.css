@@ -6,6 +6,7 @@ h3,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 /* Переменные */
@@ -25,6 +26,7 @@ ul {
 
   /* Інше */
   --col-bd-11: #ececec;
+  --col-bd-12: #eee;
 }
 
 /* Глобальні стилі */
@@ -88,6 +90,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link:hover,
@@ -119,7 +124,7 @@ img {
 
   color: var(--ligt-cl-txt);
 
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 /* Кнопка головної секції */
 .button-main {
@@ -133,10 +138,13 @@ img {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
   display: block;
   width: 216px;
   height: 50px;
+  /* padding-left: 692px;
+  padding-right: 692px; */
+  justify-content: center;
 }
 .button-main:hover,
 .button-main:focus {
@@ -191,6 +199,7 @@ img {
 }
 
 .title-team {
+  font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   text-align: center;
@@ -260,6 +269,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-cl-txt);
+  margin-bottom: 4px;
 }
 .type-project {
   line-height: 1.87;
@@ -289,14 +299,14 @@ img {
 .list.list-contact {
   display: flex;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 .list.list-nav {
   display: flex;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 
 .list .item-nav:not(:last-child) {
@@ -330,26 +340,20 @@ img {
 .item-advantage {
   width: 270px;
 }
-.cont-advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .list-services {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 30px;
 }
 
-.section-services {
-  padding-bottom: 94px;
+.section.section-services {
+  padding-top: 0;
 }
 
 .list-team {
   display: flex;
   justify-content: space-between;
-}
-.container-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .img-team {
@@ -366,8 +370,6 @@ img {
 }
 
 .container-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .item-btn:not(:last-child) {
   margin-right: 8px;
@@ -386,4 +388,20 @@ img {
 }
 .item-project:not(:nth-child(3n)) {
   margin-right: 30px;
+}
+
+.img-project {
+  /* margin-bottom: 20px; */
+}
+.description-project {
+  padding: 20px 24px;
+  border: 1px solid var(--col-bd-12);
+  border-top: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.main-container {
+  justify-content: center;
 }
